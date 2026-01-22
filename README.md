@@ -45,8 +45,6 @@ Finished demo delivered Friday, Jan 24.
 
 ### 2.4 Coins
 - Disappear when touched
-- Increase counter
-- Collect all → level complete
 
 ### 2.5 Death
 - Touching void triggers death
