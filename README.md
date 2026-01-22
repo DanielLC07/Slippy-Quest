@@ -7,7 +7,7 @@ A cute and fast-paced 2D platformer where you play as a small bouncing slime. Ju
 **Status:** In Process  
 **Date:** January 22, 2026  
 **Development Time:** 2 Days (Wed–Thu)  
-**Delivery:** Friday, January 24, 2026
+**Delivery:** Friday, January 23, 2026
 
 ---
 
