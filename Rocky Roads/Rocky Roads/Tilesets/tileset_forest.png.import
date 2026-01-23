@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture2D"
+uid="uid://i5l3k8w8c5xj"
+path="res://.godot/imported/tileset_forest.png-cd0b679722e160ddb952b7f57eb70710.res"
+
+[deps]
+
+source_file="res://Rocky Roads/Rocky Roads/Tilesets/tileset_forest.png"
+dest_files=["res://.godot/imported/tileset_forest.png-cd0b679722e160ddb952b7f57eb70710.res"]
+
+[params]
+
+atlas_file=""
+import_mode=0
+crop_to_region=false
+trim_alpha_border_from_region=true

@@ -1,0 +1,135 @@
+[gd_scene load_steps=10 format=4 uid="uid://b80gkixpowxod"]
+
+[ext_resource type="Script" path="res://GameManager.gd" id="1_2hh7m"]
+[ext_resource type="Texture2D" uid="uid://hcyxyb1gf1nf" path="res://Rocky Roads/Rocky Roads/Backgrounds/desert_b.png" id="1_fw4w5"]
+[ext_resource type="Texture2D" uid="uid://bfoliu1inhifi" path="res://Rocky Roads/Rocky Roads/Backgrounds/clouds.png" id="2_aou4a"]
+[ext_resource type="PackedScene" uid="uid://bphuyqdhxl4jf" path="res://player.tscn" id="2_lgngo"]
+[ext_resource type="Texture2D" uid="uid://dmy2hg17hokxt" path="res://Rocky Roads/Rocky Roads/Backgrounds/mountains_b.png" id="3_5ckkb"]
+[ext_resource type="TileSet" uid="uid://kuf02hdnf03c" path="res://My_NewTileset.tres" id="4_aou4a"]
+[ext_resource type="PackedScene" uid="uid://cl6t47kwy4i68" path="res://coin.tscn" id="6_5ckkb"]
+[ext_resource type="Script" uid="uid://bfvjquxtxfl7j" path="res://UI.gd" id="8_pfhxm"]
+[ext_resource type="Texture2D" uid="uid://douiifkaiitwa" path="res://Rocky Roads/Rocky Roads/Objects/coin_gold.png" id="8_t8jxu"]
+
+[node name="Mundo" type="Node2D"]
+script = ExtResource("1_2hh7m")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+
+[node name="DesertB" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(-32, -42.000004)
+scale = Vector2(1.4375, 1.96875)
+texture = ExtResource("1_fw4w5")
+
+[node name="Clouds" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(-28, 12)
+scale = Vector2(1.46875, 1.1875)
+texture = ExtResource("2_aou4a")
+
+[node name="MountainsB" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(-29.999989, -28.999996)
+scale = Vector2(1.4843751, 1.9218748)
+texture = ExtResource("3_5ckkb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="DesertB" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(335.99997, -42)
+scale = Vector2(1.4375, 1.96875)
+texture = ExtResource("1_fw4w5")
+
+[node name="Clouds" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(336, 8)
+scale = Vector2(1.46875, 1.1875)
+texture = ExtResource("2_aou4a")
+
+[node name="MountainsB" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(336, -31.999998)
+scale = Vector2(1.4843751, 1.9218748)
+texture = ExtResource("3_5ckkb")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Front" type="TileMapLayer" parent="Node2D"]
+position = Vector2(-24, 8)
+tile_map_data = PackedByteArray("AAD4/wEAAQABAAIAAAD4/wIAAQABAAMAAAD4/wMAAQABAAQAAAD5/wEAAQADAAEAAAD5/wIAAQACAAMAAAD5/wMAAQACAAQAAAD6/wEAAQADAAEAAAD6/wIAAQADAAMAAAD6/wMAAQADAAQAAAD7/wEAAQADAAEAAAD7/wIAAQAEAAMAAAD7/wMAAQAEAAQAAAD8/wEAAQACAAIAAAD8/wIAAQACAAMAAAD8/wMAAQACAAQAAAD9/wEAAQADAAIAAAD9/wIAAQAEAAMAAAD9/wMAAQAEAAQAAAD8/wAAAQACAAEAAAD9/wAAAQADAAEAAAD+////AQACAAEAAAD+/wAAAQACAAIAAAD+/wEAAQACAAMAAAD+/wIAAQAFAAMAAAD/////AQADAAEAAAD//wAAAQADAAIAAAD//wEAAQADAAIAAAD//wIAAQAEAAMAAAAAAP7/AQACAAEAAAAAAP//AQACAAIAAAAAAAAAAQACAAMAAAAAAAEAAQAEAAIAAAABAP7/AQADAAEAAAABAP//AQADAAIAAAABAAAAAQADAAMAAAABAAEAAQAEAAMAAAACAP3/AQACAAEAAAACAP7/AQACAAIAAAACAP//AQACAAMAAAACAAAAAQACAAQAAAADAP3/AQADAAEAAAADAP7/AQADAAIAAAADAP//AQADAAMAAAADAAAAAQADAAQAAAABAAIAAQAFAAQAAAACAAEAAQAFAAMAAAACAAIAAQAFAAQAAAADAAEAAQAGAAMAAAADAAIAAQAGAAQAAAD//wMAAQAFAAQAAAAAAAIAAQAFAAMAAAAAAAMAAQAFAAQAAAABAAMAAQAGAAQAAAD+/wMAAQAFAAQAAAAGAP3/AQAIAAEAAAAHAP3/AQAIAAEAAAAIAP3/AQAIAAEAAAAKAAAAAQAIAAEAAAALAAEAAQAIAAEAAAAMAAIAAQAIAAEAAAAQAAAAAQAIAAEAAAASAP//AQAIAAEAAAAWAP3/AQAIAAEAAAA=")
+tile_set = ExtResource("4_aou4a")
+collision_visibility_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_lgngo")]
+position = Vector2(-112, 16)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-8, 0)
+zoom = Vector2(3.5, 3.5)
+position_smoothing_enabled = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+
+[node name="DesertB" type="Sprite2D" parent="Sprite2D3"]
+position = Vector2(701.99994, -42)
+scale = Vector2(1.4375, 1.96875)
+texture = ExtResource("1_fw4w5")
+
+[node name="Clouds" type="Sprite2D" parent="Sprite2D3"]
+position = Vector2(702, 8)
+scale = Vector2(1.46875, 1.1875)
+texture = ExtResource("2_aou4a")
+
+[node name="MountainsB" type="Sprite2D" parent="Sprite2D3"]
+position = Vector2(702, -31.999998)
+scale = Vector2(1.4843751, 1.9218748)
+texture = ExtResource("3_5ckkb")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(728, 0)
+
+[node name="DesertB" type="Sprite2D" parent="Sprite2D4"]
+position = Vector2(335.99997, -42)
+scale = Vector2(1.4375, 1.96875)
+texture = ExtResource("1_fw4w5")
+
+[node name="Clouds" type="Sprite2D" parent="Sprite2D4"]
+position = Vector2(336, 8)
+scale = Vector2(1.46875, 1.1875)
+texture = ExtResource("2_aou4a")
+
+[node name="MountainsB" type="Sprite2D" parent="Sprite2D4"]
+position = Vector2(336, -31.999998)
+scale = Vector2(1.4843751, 1.9218748)
+texture = ExtResource("3_5ckkb")
+
+[node name="Coin" parent="." instance=ExtResource("6_5ckkb")]
+position = Vector2(-80, -8)
+
+[node name="GameManager" type="Node" parent="."]
+
+[node name="CoinCounter" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+script = ExtResource("8_pfhxm")
+
+[node name="Panel" type="Panel" parent="CoinCounter"]
+offset_left = -200.0
+offset_top = -72.0
+offset_right = -144.0
+offset_bottom = -48.0
+
+[node name="CoinSprite" type="Sprite2D" parent="CoinCounter"]
+position = Vector2(-190, -61)
+scale = Vector2(0.9444444, 1)
+texture = ExtResource("8_t8jxu")
+hframes = 7
+
+[node name="CoinsCollectedText" type="Label" parent="CoinCounter"]
+anchors_preset = -1
+anchor_left = -0.07638889
+anchor_top = -0.040123455
+anchor_right = -0.125
+anchor_bottom = -0.061728396
+offset_left = -96.0
+offset_top = -48.0
+offset_right = 96.0
+offset_bottom = 41.0
+text = ": 00
+
+"
+metadata/_edit_use_anchors_ = true
