@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Movement constants
-const MOVE_SPEED = 150
+const MOVE_SPEED = 175
 const JUMP_FORCE = -350
 const GRAVITY = 1200
 const FRICTION = 15.0 # Increased for a sharper/snappier stop
