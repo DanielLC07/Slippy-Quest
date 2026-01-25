@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfyhq2m2ti4tf"]
+
+[ext_resource type="Script" uid="uid://y76wo1lpc25l" path="res://win_ui.gd" id="1_pkph8"]
+[ext_resource type="Texture2D" uid="uid://b3r7nskjj824v" path="res://Rocky Roads/Rocky Roads/UI/RestartButton.png" id="2_sut20"]
+[ext_resource type="Texture2D" uid="uid://c5rxiriltvpa8" path="res://Rocky Roads/Rocky Roads/UI/Victory.png" id="3_5yxx0"]
+
+[node name="VictoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinUITextures" type="CanvasLayer" parent="."]
+script = ExtResource("1_pkph8")
+
+[node name="MainContainer" type="Control" parent="WinUITextures"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlackBackground" type="ColorRect" parent="WinUITextures/MainContainer"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.68235296)
+
+[node name="VictoryText" type="TextureRect" parent="WinUITextures/MainContainer"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = -48.0
+offset_right = 840.0
+offset_bottom = 284.0
+texture = ExtResource("3_5yxx0")
+expand_mode = 1
+
+[node name="RestartButton" type="TextureButton" parent="WinUITextures/MainContainer"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 144.0
+offset_right = 802.0
+offset_bottom = 628.0
+texture_normal = ExtResource("2_sut20")
+texture_pressed = ExtResource("2_sut20")
+texture_hover = ExtResource("2_sut20")
+texture_disabled = ExtResource("2_sut20")
+texture_focused = ExtResource("2_sut20")
+ignore_texture_size = true
