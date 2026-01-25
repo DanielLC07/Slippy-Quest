@@ -223,7 +223,8 @@ A 2D platformer where a slime character traverses multiple levels. The player mu
 
 - **Godot Docs:** [https://docs.godotengine.org](https://docs.godotengine.org)  
 - Tutorials: search “Godot 2D platformer tutorial”  
-- Assets: Kenney.nl, itch.io, OpenGameArt.org  
+- Assets: Kenney.nl, itch.io, OpenGameArt.org
+- Itchio page Link : https://daniellc07.itch.io/slippy-quest
 
 **Version:** 1.1  
 **Date:** Wednesday, January 22, 2026  
